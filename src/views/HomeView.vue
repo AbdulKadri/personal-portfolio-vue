@@ -1,10 +1,13 @@
-<script setup lang="ts">
-import Header from '@/components/Header.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <main>
-    <p>Abdul-Rahime Kadri</p>
+    <h1 class="levitate" v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0 }">
+      Abdul-Rahime
+    </h1>
+    <h1 class="levitate" v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0 }">
+      Kadri
+    </h1>
   </main>
   <section>Small Summary</section>
   <section>Recent Projects</section>
@@ -19,8 +22,12 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  line-height: 1.5;
+  font-size: larger;
   color: white;
 
   max-width: 100vw;
@@ -34,5 +41,18 @@ main {
   background-size: cover;
 
   box-sizing: border-box;
+}
+
+.levitate {
+  animation: levitate 1s ease-in-out infinite alternate;
+}
+
+@keyframes levitate {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 </style>
