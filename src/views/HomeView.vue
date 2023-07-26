@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Card from '@/components/Card.vue'
+</script>
 
 <template>
   <main>
@@ -9,9 +11,26 @@
       Kadri
     </h1>
   </main>
-  <section>Small Summary</section>
-  <section>Recent Projects</section>
-  <section>Connect With Me</section>
+  <Card
+    title="Summary"
+    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit..."
+    link="/about"
+    linkText="Read More"
+  />
+
+  <Card
+    title="Recent Projects"
+    description="Description of recent projects..."
+    link="/projects"
+    linkText="See All"
+  />
+
+  <Card
+    title="Connect With Me"
+    description="Description of connect with me section..."
+    link="/contact"
+    linkText="Connect"
+  />
 </template>
 
 <style>
@@ -26,8 +45,8 @@ main {
   justify-content: center;
   align-items: center;
 
-  line-height: 1.5;
-  font-size: larger;
+  line-height: 1.2;
+  font-size: 1.5rem;
   color: white;
 
   max-width: 100vw;
@@ -44,6 +63,7 @@ main {
 }
 
 .levitate {
+  text-shadow: -1px 0 #00ccff, 0 1px #00ccff, 1px 0 #00ccff, 0 -1px #00ccff;
   animation: levitate 1s ease-in-out infinite alternate;
 }
 
@@ -52,7 +72,7 @@ main {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 </style>
