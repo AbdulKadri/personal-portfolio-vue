@@ -6,6 +6,9 @@ import Header from '@/components/Header.vue'
   <main>
     <p>Abdul-Rahime Kadri</p>
   </main>
+  <section>Small Summary</section>
+  <section>Recent Projects</section>
+  <section>Connect With Me</section>
 </template>
 
 <style>
@@ -21,7 +24,7 @@ main {
   color: white;
 
   max-width: 100vw;
-  min-height: 80vh;
+  min-height: 70vh;
   margin: 0 2rem;
   border-radius: 8px;
 
