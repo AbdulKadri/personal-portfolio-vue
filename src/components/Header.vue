@@ -27,8 +27,15 @@ header {
   padding: 0 2rem;
 }
 
+.wrapper {
+  height: 100%;
+}
+
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  height: 100%;
 }
 </style>
