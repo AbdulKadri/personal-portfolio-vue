@@ -36,7 +36,7 @@ let hover = ref(false)
   align-items: center;
 
   position: relative;
-  padding: 0 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 50px;
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
