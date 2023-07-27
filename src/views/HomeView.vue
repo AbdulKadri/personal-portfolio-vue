@@ -13,23 +13,46 @@ import Card from '@/components/Card.vue'
   </main>
   <Card
     title="Summary"
-    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit..."
+    description="Hello! I'm Abdul-Rahime Kadri, a web developer with a passion for creating beautiful and functional websites. My journey into coding began during my studies at Macewan University and the University of Calgary. I've worked on a variety of projects, from simple landing pages to complex e-commerce sites, and have experience with many languages and frameworks. I've currently working at Muslim Association of Canada (MAC), and worked with GoViralProductions. Some of my other work includes freelance with Hands for Charity and individual clients. I'm always open to new collaborations and projects..."
     link="/about"
     linkText="Read More"
   />
 
   <Card
     title="Recent Projects"
-    description="Description of recent projects..."
     link="/projects"
     linkText="See All"
+    :projects="[
+      {
+        title: 'Campus Crafters',
+        image: 'src/assets/projects/CampusCrafters.png'
+      },
+      {
+        title: 'Luxury Cuts',
+        image: 'src/assets/projects/LuxuryCuts.png'
+      },
+      {
+        title: 'Work Bridge',
+        image: 'src/assets/projects/WorkBridge.png'
+      },
+      {
+        title: 'Electronics Store',
+        image: 'src/assets/projects/ElectronicsStore.png'
+      }
+    ]"
   />
 
   <Card
     title="Connect With Me"
-    description="Description of connect with me section..."
     link="/contact"
     linkText="Connect"
+    :socials="[
+      { icon: ['fab', 'github'], link: 'https://github.com/AbdulKadri' },
+      {
+        icon: ['fab', 'linkedin'],
+        link: 'https://www.linkedin.com/in/abdul-rahime-kadri-bb8935178/'
+      }
+    ]"
   />
 </template>
 
