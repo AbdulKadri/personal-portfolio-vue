@@ -59,14 +59,13 @@ p {
 }
 
 .skills-container {
-  /* border-radius: 10px;
-  background: #e0e0e0;
-  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  width: 100%;
 }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  width: 100%;
   padding: 1rem;
   gap: 1rem;
 }
@@ -81,8 +80,6 @@ p {
   border-radius: 10px;
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
-  width: 10%;
-  height: auto;
   padding: 0.5rem 0;
 }
 
