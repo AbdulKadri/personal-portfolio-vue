@@ -14,12 +14,15 @@ import {
   faHouse,
   faUser
 } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faArrowRight)
 library.add(faHouse)
 library.add(faUser)
 library.add(faDiagramProject)
 library.add(faAddressBook)
+library.add(faGithub)
+library.add(faLinkedin)
 
 const app = createApp(App)
 
