@@ -4,7 +4,15 @@ import StyledLink from './StyledLink.vue'
 
 <template>
   <header>
-    <img alt="Personal logo" class="logo" src="@\assets\personal-logo.svg" width="50" height="50" />
+    <RouterLink to="/">
+      <img
+        alt="Personal logo"
+        class="logo"
+        src="@\assets\personal-logo.svg"
+        width="50"
+        height="50"
+      />
+    </RouterLink>
 
     <div class="wrapper">
       <nav>
@@ -25,6 +33,10 @@ header {
 
   width: 100%;
   padding: 0 2rem;
+}
+
+header img {
+  height: 2rem;
 }
 
 .wrapper {
