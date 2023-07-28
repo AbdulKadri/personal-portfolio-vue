@@ -1,3 +1,11 @@
+enum SectionType {
+  REACT = 'React',
+  NEXT = 'Next.js',
+  LARAVEL = 'PHP/Laravel',
+  WORDPRESS = 'WordPress',
+  AWS = 'AWS'
+}
+
 interface Project {
   title: string
   description: string
@@ -10,6 +18,7 @@ interface Project {
   repositoryLink?: string
   imageURL: string
   gifURL?: string
+  sectionType: SectionType
 }
 
 const projects: Project[] = [
@@ -25,7 +34,8 @@ const projects: Project[] = [
     liveLink: 'https://electronics-store-alpha.vercel.app/',
     repositoryLink: 'https://github.com/AbdulKadri/eCommerce',
     imageURL: 'src/assets/projects/ElectronicsStore.png',
-    gifURL: 'src/assets/projects/ElectronicsStore.gif'
+    gifURL: 'src/assets/projects/ElectronicsStore.gif',
+    sectionType: SectionType.REACT
   },
   {
     title: 'Sports Nexus (Social Media App)',
@@ -37,7 +47,8 @@ const projects: Project[] = [
     liveLink: 'https://sportsnexus.onrender.com/',
     repositoryLink: 'https://github.com/AbdulKadri/social-media',
     imageURL: 'src/assets/projects/SportsNexus.png',
-    gifURL: 'src/assets/projects/SportsNexus.gif'
+    gifURL: 'src/assets/projects/SportsNexus.gif',
+    sectionType: SectionType.REACT
   },
   {
     title: 'Apex Weather (Weather App)',
@@ -48,7 +59,8 @@ const projects: Project[] = [
     liveLink: 'https://next-weather-app-lac.vercel.app/',
     repositoryLink: 'https://github.com/AbdulKadri/next-weather-app',
     imageURL: 'src/assets/projects/ApexWeather.png',
-    gifURL: 'src/assets/projects/ApexWeather.gif'
+    gifURL: 'src/assets/projects/ApexWeather.gif',
+    sectionType: SectionType.REACT
   },
   {
     title: 'Luxury Cuts (Barbershop Website)',
@@ -59,7 +71,8 @@ const projects: Project[] = [
     liveLink: 'https://superlative-snickerdoodle-94900b.netlify.app/',
     repositoryLink: 'https://github.com/AbdulKadri/luxury-cuts',
     imageURL: 'src/assets/projects/LuxuryCuts.png',
-    gifURL: 'src/assets/projects/LuxuryCuts.gif'
+    gifURL: 'src/assets/projects/LuxuryCuts.gif',
+    sectionType: SectionType.REACT
   },
   {
     title: 'Work Bridge (Job Board)',
@@ -71,7 +84,8 @@ const projects: Project[] = [
     liveLink: '',
     repositoryLink: 'https://github.com/AbdulKadri/job-board',
     imageURL: 'src/assets/projects/WorkBridge.png',
-    gifURL: 'src/assets/projects/WorkBridge.gif'
+    gifURL: 'src/assets/projects/WorkBridge.gif',
+    sectionType: SectionType.LARAVEL
   },
   {
     title: 'Yeg Dealership (Car Dealership)',
@@ -82,7 +96,8 @@ const projects: Project[] = [
     hosting: 'Hostinger',
     liveLink: 'https://yegdealership.shop/',
     imageURL: 'src/assets/projects/YegDealership.png',
-    gifURL: 'src/assets/projects/YegDealership.gif'
+    gifURL: 'src/assets/projects/YegDealership.gif',
+    sectionType: SectionType.WORDPRESS
   },
   {
     title: 'Wild Rydes (Ride Sharing App)',
@@ -93,7 +108,20 @@ const projects: Project[] = [
     liveLink: 'https://main.d2tkktllao8g56.amplifyapp.com/',
     repositoryLink: 'https://github.com/AbdulKadri/wildrydes-site',
     imageURL: 'src/assets/projects/WildRydes.png',
-    gifURL: 'src/assets/projects/WildRydes.gif'
+    gifURL: 'src/assets/projects/WildRydes.gif',
+    sectionType: SectionType.AWS
+  },
+  {
+    title: 'Campus Crafters (Coming Soon)',
+    description: 'A PHP/Laravel project for schools to buy equipment and supplies.',
+    frontend: 'Blade, TailwindCSS',
+    backend: 'Laravel, MySQL, PHP',
+    hosting: 'Coming Soon',
+    liveLink: '',
+    repositoryLink: '',
+    imageURL: 'src/assets/projects/CampusCrafters.png',
+    // gifURL: 'src/assets/projects/CampusCrafters.gif',
+    sectionType: SectionType.LARAVEL
   }
 ]
 
