@@ -18,6 +18,7 @@ import Footer from '@/components/Footer.vue'
   color: #2c3e50;
 
   min-width: 100%;
+  min-height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
