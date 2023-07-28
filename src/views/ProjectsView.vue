@@ -7,8 +7,11 @@
         <h4
           v-for="section in sections"
           :key="section"
-          @click="selected = section"
-          :class="{ active: selected === section }"
+          @click="handleClick(section)"
+          :class="{
+            active: selected === section,
+            disabled: section !== 'All' && projectCounts[section] === 0
+          }"
         >
           {{ section }}
         </h4>
@@ -30,7 +33,7 @@
         <!-- Add more conditions for other sections -->
         <div class="projects-container">
           <div class="projects">
-            <div v-for="(project, index) in projects" :key="index" class="project">
+            <div v-for="(project, index) in filteredProjects" :key="index" class="project">
               <div class="project-text">
                 <h3>{{ project.title }}</h3>
                 <br />
@@ -88,23 +91,42 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import projects from '../data/projects'
 import StyledLink from '@/components/StyledLink.vue'
 
-const sections = [
-  'All',
-  'React',
-  'Vue',
-  'FullStack',
-  'WordPress',
-  'PHP/Laravel',
-  'Python/Django',
-  'C#/.NET',
-  'React Native',
-  'Figma'
-]
+const sections = ['All', 'React', 'Vue', 'WordPress', 'PHP/Laravel', 'AWS', 'C#/.NET', 'Figma']
 const selected = ref(sections[0]) // Default to the first section
+const filteredProjects = ref(projects)
+const projectCounts = ref<Record<string, number | undefined>>({})
+
+// A function that counts the number of projects in each section
+const countProjects = () => {
+  sections.forEach((section) => {
+    projectCounts.value[section] = projects.filter(
+      (project) => project.sectionType === section
+    ).length
+  })
+  filteredProjects.value = projects // Initially, display all projects
+}
+
+watch(selected, () => {
+  if (selected.value === 'All') {
+    filteredProjects.value = projects
+  } else {
+    filteredProjects.value = projects.filter((project) => project.sectionType === selected.value)
+  }
+})
+
+const handleClick = (section: string) => {
+  const count = projectCounts.value[section]
+  if (section === 'All' || (count !== undefined && count !== 0)) {
+    selected.value = section
+  }
+}
+
+// Calculate project counts when component is created
+countProjects()
 </script>
 
 <style scoped>
@@ -120,6 +142,7 @@ nav {
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   padding: 1rem;
+  height: fit-content;
 }
 
 nav > *:hover {
@@ -135,6 +158,11 @@ nav .active {
   border-radius: 10px;
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+nav .disabled {
+  color: grey;
+  cursor: not-allowed;
 }
 
 main {
