@@ -1,9 +1,10 @@
 enum SectionType {
   REACT = 'React',
-  NEXT = 'Next.js',
+  VUE = 'Vue',
   LARAVEL = 'PHP/Laravel',
   WORDPRESS = 'WordPress',
-  AWS = 'AWS'
+  AWS = 'AWS',
+  FIGMA = 'Figma'
 }
 
 interface Project {
@@ -81,7 +82,7 @@ const projects: Project[] = [
     frontend: 'Blade, TailwindCSS, Alpine.js',
     backend: 'Laravel, MySQL, PHP',
     hosting: 'Coming Soon',
-    liveLink: '',
+    // liveLink: '',
     repositoryLink: 'https://github.com/AbdulKadri/job-board',
     imageURL: 'src/assets/projects/WorkBridge.png',
     gifURL: 'src/assets/projects/WorkBridge.gif',
@@ -105,7 +106,7 @@ const projects: Project[] = [
       "An AWS project enabling customers to sign up, validate their emails, and request a ride from a location on the map. (Please note, while the codebase isn't original, the AWS implementation is my work).",
     frontend: 'AWS Amplify, Cognito, DynamoDB, Lambda, API Gateway, S3, CloudWatch, SES, IAM.',
     hosting: 'AWS',
-    liveLink: 'https://main.d2tkktllao8g56.amplifyapp.com/',
+    // liveLink: 'https://main.d2tkktllao8g56.amplifyapp.com/',
     repositoryLink: 'https://github.com/AbdulKadri/wildrydes-site',
     imageURL: 'src/assets/projects/WildRydes.png',
     gifURL: 'src/assets/projects/WildRydes.gif',
@@ -117,11 +118,79 @@ const projects: Project[] = [
     frontend: 'Blade, TailwindCSS',
     backend: 'Laravel, MySQL, PHP',
     hosting: 'Coming Soon',
-    liveLink: '',
-    repositoryLink: '',
+    // liveLink: '',
+    // repositoryLink: '',
     imageURL: 'src/assets/projects/CampusCrafters.png',
     // gifURL: 'src/assets/projects/CampusCrafters.gif',
     sectionType: SectionType.LARAVEL
+  },
+  {
+    title: 'Personal Portolio React',
+    description: 'A React-based portfolio website.',
+    frontend: 'React, SASS, Swiper, Emailjs...',
+    hosting: 'github-pages',
+    liveLink: 'https://abdulkadri.github.io/personal-portfolio/',
+    repositoryLink: 'https://github.com/AbdulKadri/personal-portfolio',
+    imageURL: 'src/assets/projects/PersonalPortfolioReact.png',
+    sectionType: SectionType.REACT
+  },
+  {
+    title: 'Hands For Charity',
+    description: 'Assisted in the project for a non-profit organization.',
+    frontend: 'HTML, CSS, JavaScript',
+    backend: 'PHP, MySQL',
+    liveLink: 'https://handsforcharity.org/',
+    imageURL: 'src/assets/projects/HandsForCharity.png',
+    sectionType: SectionType.LARAVEL
+  },
+  {
+    title: 'Muslim Association of Canada (MAC)',
+    description: 'Helped build many different features for MAC.',
+    frontend: 'HTML, CSS, JavaScript, Figma',
+    cms: 'WordPress',
+    liveLink: 'https://macnet.ca/',
+    imageURL: 'src/assets/projects/MAC.png',
+    sectionType: SectionType.WORDPRESS
+  },
+  {
+    title: 'Major Rager',
+    description: 'Refactored code and styles for a rage room',
+    frontend: 'WordPress',
+    liveLink: 'https://majorrager.ca/',
+    imageURL: 'src/assets/projects/MajorRager.png',
+    sectionType: SectionType.WORDPRESS
+  },
+  {
+    title: 'Personal Portfolio Vue',
+    description: 'A Vue-based portfolio website.',
+    frontend: 'Vue, Vue-Router, Vue-Toastification, Vite, CSS, Axios, Emailjs...',
+    hosting: 'github-pages',
+    liveLink: 'https://abdulkadri.github.io/personal-portfolio-vue/',
+    repositoryLink: '',
+    imageURL: 'src/assets/projects/PersonalPortfolioVue.png',
+    sectionType: SectionType.VUE
+  },
+  {
+    title: 'Custom Cakes',
+    description: 'A Figma project for a custom cake business.',
+    frontend: 'Figma',
+    cms: 'WordPress',
+    imageURL: 'src/assets/projects/CustomCakesFigma.png',
+    sectionType: SectionType.FIGMA
+  },
+  {
+    title: 'Luxury Cuts',
+    description: 'A Figma design for a barbershop.',
+    frontend: 'Figma',
+    imageURL: 'src/assets/projects/LuxuryCutsFigma.png',
+    sectionType: SectionType.FIGMA
+  },
+  {
+    title: 'Campus Crafters',
+    description: 'A Figma design for a school supplies business.',
+    frontend: 'Figma',
+    imageURL: 'src/assets/projects/CampusCraftersFigma.png',
+    sectionType: SectionType.FIGMA
   }
 ]
 
