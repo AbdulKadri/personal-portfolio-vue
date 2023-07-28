@@ -36,10 +36,39 @@
       </div>
     </div>
 
-    <h1>Work Experience</h1>
-    <h1>Work Experience</h1>
-    <h1>Schooling</h1>
-    <h1>Certificates</h1>
+    <div class="work-container">
+      <h1>Work Experience</h1>
+      <div class="work">
+        <div class="work-item">
+          <h3>Muslim Association of Canada</h3>
+          <img src="../assets/work/mac-logo.png" alt="Mac logo" />
+          <p>Web Developer</p>
+        </div>
+        <div class="work-item">
+          <h3>Hands for Charity</h3>
+          <img src="../assets/work/hfc-logo.png" alt="HFC logo" />
+          <p>Freelance Web Developer</p>
+        </div>
+        <div class="work-item">
+          <h3>Go Viral Productions</h3>
+          <img src="../assets/work/goviral-logo.png" alt="GVP logo" />
+          <p>Web Developer</p>
+        </div>
+        <div class="work-item">
+          <h3>Freelance</h3>
+          <img src="../assets/personal-logo.svg" alt="Freelance logo" />
+          <p>Freelance Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="school-container">
+      <h1>Schooling</h1>
+    </div>
+
+    <div class="cert-container">
+      <h1>Certificates</h1>
+    </div> -->
   </div>
 </template>
 
@@ -98,5 +127,42 @@ p {
 .skill img {
   width: 50%;
   height: 50%;
+}
+
+.work-container {
+  width: 100%;
+  margin: 0 2rem;
+}
+
+.work {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 0.5rem 0;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 15rem;
+  flex: 1 0 20%;
+  height: 10rem;
+  max-width: 200px;
+  margin: 1rem;
+  padding: 0.5rem;
+
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.work-item img {
+  width: 80%;
+  height: 60%;
+  object-fit: contain;
 }
 </style>
