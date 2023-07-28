@@ -25,19 +25,19 @@ import Card from '@/components/Card.vue'
     :projects="[
       {
         title: 'Campus Crafters',
-        image: 'src/assets/projects/CampusCrafters.png'
+        image: '/projects/CampusCrafters.png'
       },
       {
         title: 'Luxury Cuts',
-        image: 'src/assets/projects/LuxuryCuts.png'
+        image: '/projects/LuxuryCuts.png'
       },
       {
         title: 'Work Bridge',
-        image: 'src/assets/projects/WorkBridge.png'
+        image: '/projects/WorkBridge.png'
       },
       {
         title: 'Electronics Store',
-        image: 'src/assets/projects/ElectronicsStore.png'
+        image: '/projects/ElectronicsStore.png'
       }
     ]"
   />
@@ -77,7 +77,7 @@ body {
   margin: 0 2rem;
   border-radius: 8px;
 
-  background-image: url('../assets/workplace.jpg');
+  background-image: url('/assets/workplace.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

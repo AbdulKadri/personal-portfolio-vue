@@ -203,10 +203,10 @@ main {
 }
 
 .project .project-text {
-  justify-self: center;
+  justify-self: self-start;
   align-self: center;
+  width: 100%;
 }
-
 .project .project-text p {
   font-size: 1rem;
 }

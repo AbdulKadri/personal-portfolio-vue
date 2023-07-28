@@ -34,8 +34,8 @@ const projects: Project[] = [
     testing: 'Jest, React Testing Library',
     liveLink: 'https://electronics-store-alpha.vercel.app/',
     repositoryLink: 'https://github.com/AbdulKadri/eCommerce',
-    imageURL: 'src/assets/projects/ElectronicsStore.png',
-    gifURL: 'src/assets/projects/ElectronicsStore.gif',
+    imageURL: '/projects/ElectronicsStore.png',
+    gifURL: '/projects/ElectronicsStore.gif',
     sectionType: SectionType.REACT
   },
   {
@@ -47,8 +47,8 @@ const projects: Project[] = [
     hosting: 'Render',
     liveLink: 'https://sportsnexus.onrender.com/',
     repositoryLink: 'https://github.com/AbdulKadri/social-media',
-    imageURL: 'src/assets/projects/SportsNexus.png',
-    gifURL: 'src/assets/projects/SportsNexus.gif',
+    imageURL: '/projects/SportsNexus.png',
+    gifURL: '/projects/SportsNexus.gif',
     sectionType: SectionType.REACT
   },
   {
@@ -59,8 +59,8 @@ const projects: Project[] = [
     hosting: 'Vercel',
     liveLink: 'https://next-weather-app-lac.vercel.app/',
     repositoryLink: 'https://github.com/AbdulKadri/next-weather-app',
-    imageURL: 'src/assets/projects/ApexWeather.png',
-    gifURL: 'src/assets/projects/ApexWeather.gif',
+    imageURL: '/projects/ApexWeather.png',
+    gifURL: '/projects/ApexWeather.gif',
     sectionType: SectionType.REACT
   },
   {
@@ -71,8 +71,8 @@ const projects: Project[] = [
     hosting: 'Netlify',
     liveLink: 'https://superlative-snickerdoodle-94900b.netlify.app/',
     repositoryLink: 'https://github.com/AbdulKadri/luxury-cuts',
-    imageURL: 'src/assets/projects/LuxuryCuts.png',
-    gifURL: 'src/assets/projects/LuxuryCuts.gif',
+    imageURL: '/projects/LuxuryCuts.png',
+    gifURL: '/projects/LuxuryCuts.gif',
     sectionType: SectionType.REACT
   },
   {
@@ -84,8 +84,8 @@ const projects: Project[] = [
     hosting: 'Coming Soon',
     // liveLink: '',
     repositoryLink: 'https://github.com/AbdulKadri/job-board',
-    imageURL: 'src/assets/projects/WorkBridge.png',
-    gifURL: 'src/assets/projects/WorkBridge.gif',
+    imageURL: '/projects/WorkBridge.png',
+    gifURL: '/projects/WorkBridge.gif',
     sectionType: SectionType.LARAVEL
   },
   {
@@ -96,8 +96,8 @@ const projects: Project[] = [
     cms: 'Wordpress & Elementor',
     hosting: 'Hostinger',
     liveLink: 'https://yegdealership.shop/',
-    imageURL: 'src/assets/projects/YegDealership.png',
-    gifURL: 'src/assets/projects/YegDealership.gif',
+    imageURL: '/projects/YegDealership.png',
+    gifURL: '/projects/YegDealership.gif',
     sectionType: SectionType.WORDPRESS
   },
   {
@@ -108,8 +108,8 @@ const projects: Project[] = [
     hosting: 'AWS',
     // liveLink: 'https://main.d2tkktllao8g56.amplifyapp.com/',
     repositoryLink: 'https://github.com/AbdulKadri/wildrydes-site',
-    imageURL: 'src/assets/projects/WildRydes.png',
-    gifURL: 'src/assets/projects/WildRydes.gif',
+    imageURL: '/projects/WildRydes.png',
+    gifURL: '/projects/WildRydes.gif',
     sectionType: SectionType.AWS
   },
   {
@@ -120,8 +120,8 @@ const projects: Project[] = [
     hosting: 'Coming Soon',
     // liveLink: '',
     // repositoryLink: '',
-    imageURL: 'src/assets/projects/CampusCrafters.png',
-    // gifURL: 'src/assets/projects/CampusCrafters.gif',
+    imageURL: '/projects/CampusCrafters.png',
+    // gifURL: '/projects/CampusCrafters.gif',
     sectionType: SectionType.LARAVEL
   },
   {
@@ -131,7 +131,7 @@ const projects: Project[] = [
     hosting: 'github-pages',
     liveLink: 'https://abdulkadri.github.io/personal-portfolio/',
     repositoryLink: 'https://github.com/AbdulKadri/personal-portfolio',
-    imageURL: 'src/assets/projects/PersonalPortfolioReact.png',
+    imageURL: '/projects/PersonalPortfolioReact.png',
     sectionType: SectionType.REACT
   },
   {
@@ -140,7 +140,7 @@ const projects: Project[] = [
     frontend: 'HTML, CSS, JavaScript',
     backend: 'PHP, MySQL',
     liveLink: 'https://handsforcharity.org/',
-    imageURL: 'src/assets/projects/HandsForCharity.png',
+    imageURL: '/projects/HandsForCharity.png',
     sectionType: SectionType.LARAVEL
   },
   {
@@ -149,7 +149,7 @@ const projects: Project[] = [
     frontend: 'HTML, CSS, JavaScript, Figma',
     cms: 'WordPress',
     liveLink: 'https://macnet.ca/',
-    imageURL: 'src/assets/projects/MAC.png',
+    imageURL: '/projects/MAC.png',
     sectionType: SectionType.WORDPRESS
   },
   {
@@ -157,7 +157,7 @@ const projects: Project[] = [
     description: 'Refactored code and styles for a rage room',
     frontend: 'WordPress',
     liveLink: 'https://majorrager.ca/',
-    imageURL: 'src/assets/projects/MajorRager.png',
+    imageURL: '/projects/MajorRager.png',
     sectionType: SectionType.WORDPRESS
   },
   {
@@ -165,9 +165,9 @@ const projects: Project[] = [
     description: 'A Vue-based portfolio website.',
     frontend: 'Vue, Vue-Router, Vue-Toastification, Vite, CSS, Axios, Emailjs...',
     hosting: 'github-pages',
-    liveLink: 'https://abdulkadri.github.io/personal-portfolio-vue/',
-    repositoryLink: '',
-    imageURL: 'src/assets/projects/PersonalPortfolioVue.png',
+    // liveLink: 'https://abdulkadri.github.io/personal-portfolio-vue/',
+    repositoryLink: 'https://github.com/AbdulKadri/personal-portfolio-vue',
+    imageURL: '/projects/PersonalPortfolioVue.png',
     sectionType: SectionType.VUE
   },
   {
@@ -175,21 +175,21 @@ const projects: Project[] = [
     description: 'A Figma project for a custom cake business.',
     frontend: 'Figma',
     cms: 'WordPress',
-    imageURL: 'src/assets/projects/CustomCakesFigma.png',
+    imageURL: '/projects/CustomCakesFigma.png',
     sectionType: SectionType.FIGMA
   },
   {
     title: 'Luxury Cuts',
     description: 'A Figma design for a barbershop.',
     frontend: 'Figma',
-    imageURL: 'src/assets/projects/LuxuryCutsFigma.png',
+    imageURL: '/projects/LuxuryCutsFigma.png',
     sectionType: SectionType.FIGMA
   },
   {
     title: 'Campus Crafters',
     description: 'A Figma design for a school supplies business.',
     frontend: 'Figma',
-    imageURL: 'src/assets/projects/CampusCraftersFigma.png',
+    imageURL: '/projects/CampusCraftersFigma.png',
     sectionType: SectionType.FIGMA
   }
 ]
