@@ -5,6 +5,8 @@ import App from './App.vue'
 import router from './router'
 
 import { MotionPlugin } from '@vueuse/motion'
+import Toast from 'vue-toastification'
+import 'vue-toastification/dist/index.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
@@ -29,6 +31,11 @@ library.add(faDisplay)
 const app = createApp(App)
 
 app.use(router)
+app.use(Toast, {
+  transition: 'Vue-Toastification__bounce',
+  maxToasts: 20,
+  newestOnTop: true
+})
 app.use(MotionPlugin)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
