@@ -5,13 +5,7 @@ import StyledLink from './StyledLink.vue'
 <template>
   <header>
     <RouterLink to="/">
-      <img
-        src="/assets/personal-logo.svg"
-        alt="Personal logo"
-        class="logo"
-        width="50"
-        height="50"
-      />
+      <img src="/personal-logo.svg" alt="Personal logo" class="logo" width="50" height="50" />
     </RouterLink>
 
     <div class="wrapper">

@@ -77,7 +77,7 @@ body {
   margin: 0 2rem;
   border-radius: 8px;
 
-  background-image: url('/assets/workplace.jpg');
+  background-image: url('/workplace.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
