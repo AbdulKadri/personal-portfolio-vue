@@ -302,21 +302,30 @@ main {
   opacity: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem;
+  }
+
   .project {
     position: relative;
     margin-top: 11rem;
     box-shadow: none;
     padding: 0;
+    grid-template-columns: 1fr;
   }
 
   .project .project-text {
     z-index: 1;
     width: 100%;
     background-color: #e0e0e0;
-    border: 10px solid #d1d1d1;
-    border-radius: 23px;
-    box-shadow: 21px 21px 30px #545454, inset 5px 5px 20px #545454, inset -10px -10px 30px #ffffff;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    padding: 1rem;
   }
 
   .project .project-text h3 {
@@ -325,7 +334,7 @@ main {
 
   .project .project-text a {
     display: block;
-    width: 30%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
@@ -353,6 +362,13 @@ main {
 
   .project-preview .project-front {
     z-index: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
   }
 }
 </style>
