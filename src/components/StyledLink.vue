@@ -1,10 +1,10 @@
 <template>
-  <RouterLink :to="link">
-    <div class="styled-link">
+  <a :href="link">
+    <div class="styled-link" target="_blank" rel="noopener noreferrer">
       <span>{{ linkText }}</span>
       <font-awesome-icon :icon="icon" />
     </div>
-  </RouterLink>
+  </a>
 </template>
 
 <script setup lang="ts">
