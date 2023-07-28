@@ -17,20 +17,20 @@
         </h4>
       </nav>
       <main>
-        <div v-if="selected === 'All'" class="All">All projects</div>
-        <div v-else-if="selected === 'React'" class="React">React projects</div>
-        <div v-else-if="selected === 'Vue'" class="Vue">Vue projects</div>
-        <div v-else-if="selected === 'FullStack'" class="FullStack">FullStack projects</div>
-        <div v-else-if="selected === 'WordPress'" class="WordPress">WordPress projects</div>
-        <div v-else-if="selected === 'PHP/Laravel'" class="PHP-Laravel">PHP/Laravel projects</div>
-        <div v-else-if="selected === 'Python/Django'" class="Python-Django">
+        <h2 v-if="selected === 'All'" class="All">All projects</h2>
+        <h2 v-else-if="selected === 'React'" class="React">React projects</h2>
+        <h2 v-else-if="selected === 'Vue'" class="Vue">Vue projects</h2>
+        <h2 v-else-if="selected === 'FullStack'" class="FullStack">FullStack projects</h2>
+        <h2 v-else-if="selected === 'WordPress'" class="WordPress">WordPress projects</h2>
+        <h2 v-else-if="selected === 'PHP/Laravel'" class="PHP-Laravel">PHP/Laravel projects</h2>
+        <h2 v-else-if="selected === 'Python/Django'" class="Python-Django">
           Python/Django projects
-        </div>
-        <div v-else-if="selected === 'C#/.NET'" class="C#-.NET">C#/.NET projects</div>
-        <div v-else-if="selected === 'React Native'" class="React-Native">
-          React Native projects
-        </div>
-        <!-- Add more conditions for other sections -->
+        </h2>
+        <h2 v-else-if="selected === 'C#/.NET'" class="C#-.NET">C#/.NET projects</h2>
+        <h2 v-else-if="selected === 'React Native'" class="React-Native">React Native projects</h2>
+        <h2 v-else-if="selected === 'AWS'" class="AWS">AWS projects</h2>
+        <h2 v-else-if="selected === 'Figma'" class="Figma">Figma projects</h2>
+
         <div class="projects-container">
           <div class="projects">
             <div v-for="(project, index) in filteredProjects" :key="index" class="project">
@@ -46,7 +46,9 @@
                 <div v-if="project.cms">
                   <p class="created-with"><u>CMS:</u> {{ project.cms }}</p>
                 </div>
-                <p class="created-with"><u>Hosting:</u> {{ project.hosting }}</p>
+                <div v-if="project.hosting">
+                  <p class="created-with"><u>Hosting:</u> {{ project.hosting }}</p>
+                </div>
                 <div v-if="project.testing">
                   <p class="created-with"><u>Testing:</u> {{ project.testing }}</p>
                 </div>
@@ -54,16 +56,15 @@
                 <div class="links">
                   <StyledLink
                     v-if="project.liveLink"
-                    link="project.liveLink"
+                    :link="project.liveLink"
                     linkText="Live site"
                     :icon="['fas', 'display']"
                     target="_blank"
                     rel="noreferrer"
                   />
-                  <StyledLink v-else link="project.liveLink" link-text="live Site" disabled />
                   <StyledLink
                     v-if="project.repositoryLink"
-                    link="project.repositoryLink"
+                    :link="project.repositoryLink"
                     link-text="Repository"
                     :icon="['fab', 'github']"
                     target="_blank"
@@ -72,7 +73,7 @@
                 </div>
               </div>
               <div class="project-preview">
-                <p class="hover-instructions">Hover to see more</p>
+                <p v-if="project.gifURL" class="hover-instructions">Hover to see more</p>
                 <div class="project-front">
                   <img v-if="project.imageURL" :src="project.imageURL" :alt="project.title" />
                   <div v-else class="placeholder-image">No Image Available</div>
@@ -138,11 +139,22 @@ countProjects()
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+
   border-radius: 10px;
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   padding: 1rem;
   height: fit-content;
+}
+
+nav > * {
+  width: 100%;
 }
 
 nav > *:hover {
@@ -170,10 +182,6 @@ main {
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   padding: 1rem;
-}
-
-.Python-Django {
-  display: none;
 }
 
 .projects {
