@@ -11,6 +11,7 @@ import {
   faAddressBook,
   faArrowRight,
   faDiagramProject,
+  faDisplay,
   faHouse,
   faUser
 } from '@fortawesome/free-solid-svg-icons'
@@ -23,6 +24,7 @@ library.add(faDiagramProject)
 library.add(faAddressBook)
 library.add(faGithub)
 library.add(faLinkedin)
+library.add(faDisplay)
 
 const app = createApp(App)
 
