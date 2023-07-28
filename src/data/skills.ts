@@ -1,36 +1,64 @@
+import HtmlLogo from '/languages/html5-original.svg'
+import CssLogo from '/languages/css3-original.svg'
+import JavaScriptLogo from '/languages/javascript-original.svg'
+import TypeScriptLogo from '/languages/typescript-original.svg'
+import ReactLogo from '/languages/react-original.svg'
+import ReduxLogo from '/languages/redux-original.svg'
+import NextLogo from '/languages/nextjs-original.svg'
+import VueLogo from '/languages/vuejs-original.svg'
+import NodeLogo from '/languages/nodejs-original.svg'
+import ExpressLogo from '/languages/express-original.svg'
+import MongoDBLogo from '/languages/mongodb-original.svg'
+import PhpLogo from '/languages/php-plain.svg'
+import LaravelLogo from '/languages/laravel.svg'
+import MySqlLogo from '/languages/mysql-plain.svg'
+import ThreeLogo from '/languages/threejs-original.svg'
+import GsapLogo from '/languages/gsap-original.svg'
+import SassLogo from '/languages/sass-original.svg'
+import TailwindLogo from '/languages/tailwindcss-plain.svg'
+import FigmaLogo from '/languages/figma-original.svg'
+import MaterialLogo from '/languages/materialui-original.svg'
+import WordpressLogo from '/languages/wordpress-plain.svg'
+import PythonLogo from '/languages/python-original.svg'
+import AwsLogo from '/languages/aws-original.svg'
+import PostmanLogo from '/languages/postman-original.svg'
+import JestLogo from '/languages/jest-plain.svg'
+import CypressLogo from '/languages/cypress.svg'
+import GitLogo from '/languages/git-original.svg'
+
 interface Tool {
   logo: string
   name: string
 }
 
 const tools: Tool[] = [
-  { logo: '/languages/html5-original.svg', name: 'HTML' },
-  { logo: '/languages/css3-original.svg', name: 'CSS' },
-  { logo: '/languages/javascript-original.svg', name: 'JavaScript' },
-  { logo: '/languages/typescript-original.svg', name: 'TypeScript' },
-  { logo: '/languages/react-original.svg', name: 'React' },
-  { logo: '/languages/redux-original.svg', name: 'Redux' },
-  { logo: '/languages/nextjs-original.svg', name: 'Next.js' },
-  { logo: '/languages/vuejs-original.svg', name: 'Vue.js' },
-  { logo: '/languages/nodejs-original.svg', name: 'Node.js' },
-  { logo: '/languages/express-original.svg', name: 'Express.js' },
-  { logo: '/languages/mongodb-original.svg', name: 'MongoDB' },
-  { logo: '/languages/php-plain.svg', name: 'PHP' },
-  { logo: '/languages/laravel.svg', name: 'Laravel' },
-  { logo: '/languages/mysql-plain.svg', name: 'MySQL' },
-  { logo: '/languages/threejs-original.svg', name: 'Three.js' },
-  { logo: '/languages/gsap-original.svg', name: 'GSAP' },
-  { logo: '/languages/sass-original.svg', name: 'Sass' },
-  { logo: '/languages/tailwindcss-plain.svg', name: 'Tailwind CSS' },
-  { logo: '/languages/figma-original.svg', name: 'Figma' },
-  { logo: '/languages/materialui-original.svg', name: 'Material UI' },
-  { logo: '/languages/wordpress-plain.svg', name: 'Wordpress' },
-  { logo: '/languages/python-original.svg', name: 'Python' },
-  { logo: '/languages/aws-original.svg', name: 'AWS' },
-  { logo: '/languages/postman-original.svg', name: 'Postman' },
-  { logo: '/languages/jest-plain.svg', name: 'Jest' },
-  { logo: '/languages/cypress.svg', name: 'Cypress' },
-  { logo: '/languages/git-original.svg', name: 'Git' }
+  { logo: HtmlLogo, name: 'HTML' },
+  { logo: CssLogo, name: 'CSS' },
+  { logo: JavaScriptLogo, name: 'JavaScript' },
+  { logo: TypeScriptLogo, name: 'TypeScript' },
+  { logo: ReactLogo, name: 'React' },
+  { logo: ReduxLogo, name: 'Redux' },
+  { logo: NextLogo, name: 'Next.js' },
+  { logo: VueLogo, name: 'Vue.js' },
+  { logo: NodeLogo, name: 'Node.js' },
+  { logo: ExpressLogo, name: 'Express.js' },
+  { logo: MongoDBLogo, name: 'MongoDB' },
+  { logo: PhpLogo, name: 'PHP' },
+  { logo: LaravelLogo, name: 'Laravel' },
+  { logo: MySqlLogo, name: 'MySQL' },
+  { logo: ThreeLogo, name: 'Three.js' },
+  { logo: GsapLogo, name: 'GSAP' },
+  { logo: SassLogo, name: 'Sass' },
+  { logo: TailwindLogo, name: 'Tailwind CSS' },
+  { logo: FigmaLogo, name: 'Figma' },
+  { logo: MaterialLogo, name: 'Material UI' },
+  { logo: WordpressLogo, name: 'Wordpress' },
+  { logo: PythonLogo, name: 'Python' },
+  { logo: AwsLogo, name: 'AWS' },
+  { logo: PostmanLogo, name: 'Postman' },
+  { logo: JestLogo, name: 'Jest' },
+  { logo: CypressLogo, name: 'Cypress' },
+  { logo: GitLogo, name: 'Git' }
 ]
 
 export default tools
