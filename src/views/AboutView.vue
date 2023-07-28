@@ -166,4 +166,3 @@ p {
   object-fit: contain;
 }
 </style>
-../../public/skills
