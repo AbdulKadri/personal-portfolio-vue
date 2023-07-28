@@ -15,6 +15,10 @@
 </template>
 
 <style>
+footer {
+  margin-top: auto;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
