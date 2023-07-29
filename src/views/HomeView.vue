@@ -20,24 +20,24 @@ import Card from '@/components/Card.vue'
 
   <Card
     title="Recent Projects"
-    link="/projects"
+    link="/src/assets/projects"
     linkText="See All"
     :projects="[
       {
         title: 'Campus Crafters',
-        image: '/projects/CampusCrafters.png'
+        image: '/src/assets/projects/CampusCrafters.png'
       },
       {
         title: 'Luxury Cuts',
-        image: '/projects/LuxuryCuts.png'
+        image: '/src/assets/projects/LuxuryCuts.png'
       },
       {
         title: 'Work Bridge',
-        image: '/projects/WorkBridge.png'
+        image: '/src/assets/projects/WorkBridge.png'
       },
       {
         title: 'Electronics Store',
-        image: '/projects/ElectronicsStore.png'
+        image: '/src/assets/projects/ElectronicsStore.png'
       }
     ]"
   />

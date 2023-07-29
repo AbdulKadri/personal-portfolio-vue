@@ -6,9 +6,9 @@
       <p class="footer-text">© 2023 Abdul-Rahime Kadri</p>
       <div class="footer-created-with">
         <p>Created with</p>
-        <img src="/languages/vuejs-original.svg" alt="" />
+        <img src="/src/assets/languages/vuejs-original.svg" alt="" />
         <p>&</p>
-        <img src="/languages/css3-original.svg" alt="" />
+        <img src="/src/assets/languages/css3-original.svg" alt="" />
       </div>
     </div>
   </footer>

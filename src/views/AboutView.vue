@@ -41,22 +41,22 @@
       <div class="work">
         <div class="work-item">
           <h3>Muslim Association of Canada</h3>
-          <img src="/work/mac-logo.png" alt="Mac logo" />
+          <img src="/src/assets/work/mac-logo.png" alt="Mac logo" />
           <p>Web Developer</p>
         </div>
         <div class="work-item">
           <h3>Hands for Charity</h3>
-          <img src="/work/hfc-logo.png" alt="HFC logo" />
+          <img src="/src/assets/work/hfc-logo.png" alt="HFC logo" />
           <p>Freelance Web Developer</p>
         </div>
         <div class="work-item">
           <h3>Go Viral Productions</h3>
-          <img src="/work/goviral-logo.png" alt="GVP logo" />
+          <img src="/src/assets/work/goviral-logo.png" alt="GVP logo" />
           <p>Web Developer</p>
         </div>
         <div class="work-item">
           <h3>Freelance</h3>
-          <img src="/assets/personal-logo.svg" alt="Freelance logo" />
+          <img src="/personal-logo.svg" alt="Freelance logo" />
           <p>Freelance Web Developer</p>
         </div>
       </div>
