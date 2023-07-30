@@ -24,8 +24,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
-  gap: 0.7rem;
-  font-size: 0.7rem;
+  gap: 1rem;
+  font-size: 1rem;
 }
 
 .footer-created-with {
@@ -36,7 +36,7 @@ footer {
 }
 
 .footer-created-with img {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 </style>

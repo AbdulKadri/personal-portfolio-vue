@@ -69,12 +69,12 @@ body {
   align-items: center;
 
   line-height: 1.2;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: white;
 
   max-width: 100vw;
   min-height: 70vh;
-  margin: 0 2rem;
+  margin: 0 4rem;
   border-radius: 8px;
 
   background-image: url('/workplace.jpg');

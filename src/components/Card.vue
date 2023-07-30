@@ -11,7 +11,7 @@
     <div v-if="socials && socials.length" class="socials">
       <div v-for="social in socials" :key="social.link">
         <a :href="social.link" target="_blank">
-          <font-awesome-icon :icon="social.icon" size="2x" />
+          <font-awesome-icon :icon="social.icon" size="4x" />
         </a>
       </div>
     </div>
@@ -60,16 +60,22 @@ const props = defineProps({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.2rem;
 
   border-radius: 10px;
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
-  margin: 1rem 2rem;
+  margin: 1rem 4rem;
   padding: 1rem;
 }
 
+.section-card h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 .section-description {
+  font-size: 1.8rem;
   text-align: left;
 }
 

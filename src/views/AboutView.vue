@@ -82,8 +82,8 @@ import tools from '../data/skills'
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 0 2rem;
+  gap: 3rem;
+  padding: 0 4rem;
 }
 
 .about {
@@ -94,8 +94,13 @@ import tools from '../data/skills'
   gap: 1rem;
 }
 
-p {
-  font-size: 0.8rem;
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -105,9 +110,9 @@ p {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   width: 100%;
-  padding: 1rem;
+  padding: 0 1rem;
   gap: 1rem;
 }
 
@@ -150,10 +155,10 @@ p {
   gap: 0.5rem;
   width: 15rem;
   flex: 1 0 20%;
-  height: 10rem;
-  max-width: 200px;
+  height: 12rem;
+  max-width: 300px;
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
 
   border-radius: 10px;
   background: #e0e0e0;

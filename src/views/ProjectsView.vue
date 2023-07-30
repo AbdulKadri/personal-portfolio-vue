@@ -135,7 +135,12 @@ countProjects()
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 1rem;
-  margin: 2rem;
+  margin: 2rem 4rem;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
 }
 
 nav {
@@ -143,8 +148,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.7rem;
+  gap: 1rem;
   width: 100%;
+  font-size: 1.5rem;
 
   border-radius: 10px;
   background: #e0e0e0;
@@ -206,9 +212,10 @@ main {
   justify-self: self-start;
   align-self: center;
   width: 100%;
+  font-size: 2rem;
 }
 .project .project-text p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .project .project-text .project-description,

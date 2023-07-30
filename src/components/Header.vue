@@ -26,13 +26,12 @@ header {
   align-items: center;
 
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 4rem;
   margin: 0.5rem 0;
-  font-size: 1rem;
 }
 
 header img {
-  height: 2rem;
+  height: 3rem;
 }
 
 .wrapper {
@@ -43,7 +42,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   height: 100%;
 }
 </style>

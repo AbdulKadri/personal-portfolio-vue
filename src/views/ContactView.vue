@@ -123,7 +123,12 @@ const handleSubmit = async (e: any) => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
 }
 .contact-form {
   display: flex;
@@ -141,6 +146,7 @@ form {
   gap: 1rem;
   width: 100%;
   text-align: left;
+  font-size: 1.3rem;
 }
 
 .form-group {
@@ -186,7 +192,7 @@ button:hover {
 }
 
 .socials > a > * {
-  height: 2rem;
+  height: 3rem;
 }
 
 .socials > a > *:hover {

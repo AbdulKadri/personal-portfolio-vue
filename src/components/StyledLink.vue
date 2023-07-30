@@ -43,6 +43,7 @@ let hover = ref(false)
   overflow: hidden;
   color: #00ccff;
   transition: color 0.3s ease-in-out;
+  font-size: 1.3rem;
 }
 .styled-link > * {
   position: relative;
