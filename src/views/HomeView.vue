@@ -20,7 +20,7 @@ import Card from '@/components/Card.vue'
 
   <Card
     title="Recent Projects"
-    link="/src/assets/projects"
+    link="/projects"
     linkText="See All"
     :projects="[
       {
