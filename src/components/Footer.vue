@@ -14,7 +14,7 @@
   </footer>
 </template>
 
-<style>
+<style scoped>
 footer {
   margin-top: auto;
 }

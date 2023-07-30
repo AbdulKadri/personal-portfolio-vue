@@ -27,6 +27,7 @@ header {
 
   width: 100%;
   padding: 0 2rem;
+  margin: 0.5rem 0;
   font-size: 1rem;
 }
 
@@ -42,7 +43,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   height: 100%;
 }
 </style>
